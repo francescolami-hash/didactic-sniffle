@@ -13,7 +13,7 @@ body{
     background:#ffffff;
     color:#202123;
     line-height:1.7;
-    padding-left:260px;
+    padding-left:330px;
 }
 
 nav{
@@ -21,9 +21,9 @@ nav{
     top:0;
     left:0;
     z-index:10;
-    width:260px;
+    width:330px;
     height:100vh;
-    padding:34px 28px;
+    padding:42px 36px;
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
@@ -48,8 +48,8 @@ nav{
 }
 
 .brand-logo{
-    width:198px;
-    height:102px;
+    width:254px;
+    height:130px;
     object-fit:contain;
     display:block;
 }
