@@ -140,6 +140,26 @@ section{
     text-decoration:underline;
 }
 
+.linkedin-icon{
+    width:32px;
+    height:32px;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:8px;
+    border-radius:6px;
+    background:#0a66c2;
+    color:white;
+    font-weight:700;
+    line-height:1;
+    vertical-align:middle;
+}
+
+.linkedin-icon:hover{
+    background:#084f95;
+    text-decoration:none;
+}
+
 footer{
     padding:40px;
     text-align:center;
