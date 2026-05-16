@@ -156,6 +156,7 @@ section{
 }
 
 .about-card,
+.blog-card,
 .contact-card,
 .market-box,
 .skill-card,
@@ -167,6 +168,7 @@ section{
 }
 
 .about-card h3,
+.blog-card h3,
 .market-box h3,
 .timeline-content h3{
     color:#202123;
@@ -200,10 +202,43 @@ section{
 }
 
 .skills-grid,
+.blog-grid,
 .markets-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:18px;
+}
+
+.blog-grid{
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
+.blog-card{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.blog-card span{
+    color:#10a37f;
+    font-size:0.82rem;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.blog-card p{
+    color:#565869;
+}
+
+.blog-card a{
+    color:#10a37f;
+    text-decoration:none;
+    font-weight:700;
+    margin-top:auto;
+}
+
+.blog-card a:hover{
+    text-decoration:underline;
 }
 
 .skill-card{
