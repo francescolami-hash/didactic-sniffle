@@ -131,6 +131,15 @@ section{
     font-weight:600;
 }
 
+.contact-card a{
+    color:#4db8ff;
+    text-decoration:none;
+}
+
+.contact-card a:hover{
+    text-decoration:underline;
+}
+
 footer{
     padding:40px;
     text-align:center;
