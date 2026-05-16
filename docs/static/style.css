@@ -13,19 +13,24 @@ body{
     background:#ffffff;
     color:#202123;
     line-height:1.7;
+    padding-left:260px;
 }
 
 nav{
     position:fixed;
     top:0;
+    left:0;
     z-index:10;
-    width:100%;
-    padding:16px 10%;
+    width:260px;
+    height:100vh;
+    padding:34px 28px;
     display:flex;
-    justify-content:space-between;
-    align-items:center;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    gap:44px;
     background:rgba(255,255,255,0.92);
-    border-bottom:1px solid #e5e5e5;
+    border-right:1px solid #e5e5e5;
     backdrop-filter:blur(14px);
 }
 
@@ -37,6 +42,9 @@ nav{
     font-weight:700;
     color:#202123;
     text-decoration:none;
+    flex-direction:column;
+    align-items:flex-start;
+    line-height:1.25;
 }
 
 .brand-logo{
@@ -48,7 +56,8 @@ nav{
 
 nav ul{
     display:flex;
-    gap:24px;
+    flex-direction:column;
+    gap:18px;
     list-style:none;
 }
 
@@ -69,7 +78,7 @@ nav a:hover{
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:110px 10% 80px;
+    padding:90px 9% 80px;
     background:#ffffff;
 }
 
@@ -125,7 +134,7 @@ nav a:hover{
 }
 
 section{
-    padding:110px 10%;
+    padding:110px 9%;
     border-top:1px solid #f0f0f0;
 }
 
@@ -242,18 +251,32 @@ footer{
 }
 
 @media (max-width:760px){
+    body{
+        padding-left:0;
+    }
+
     nav{
         position:static;
+        width:100%;
+        height:auto;
         padding:18px 6%;
         align-items:flex-start;
         gap:14px;
         flex-direction:column;
+        border-right:0;
+        border-bottom:1px solid #e5e5e5;
     }
 
     nav ul{
         width:100%;
         flex-wrap:wrap;
+        flex-direction:row;
         gap:12px 18px;
+    }
+
+    .logo{
+        flex-direction:row;
+        align-items:center;
     }
 
     .brand-logo{
