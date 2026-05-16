@@ -1,5 +1,7 @@
 .venv/
 .vscode/
+.agents/
+.codex/
 __pycache__/
 *.pyc
 /requirements.txt
