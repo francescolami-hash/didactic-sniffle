@@ -20,7 +20,7 @@ nav{
     top:0;
     z-index:10;
     width:100%;
-    padding:18px 10%;
+    padding:16px 10%;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -40,8 +40,8 @@ nav{
 }
 
 .brand-logo{
-    width:64px;
-    height:34px;
+    width:112px;
+    height:58px;
     object-fit:contain;
     display:block;
 }
@@ -257,8 +257,8 @@ footer{
     }
 
     .brand-logo{
-        width:56px;
-        height:30px;
+        width:92px;
+        height:48px;
     }
 
     .hero{
