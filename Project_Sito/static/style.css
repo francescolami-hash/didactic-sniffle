@@ -56,6 +56,32 @@ nav{
     display:block;
 }
 
+.brand-logo-wrap{
+    position:relative;
+    display:inline-block;
+    line-height:0;
+}
+
+.brand-logo-wrap::after{
+    content:"R";
+    position:absolute;
+    right:-4px;
+    bottom:-4px;
+    width:18px;
+    height:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:2px solid #000000;
+    border-radius:50%;
+    background:#ffffff;
+    color:#000000;
+    font-size:0.66rem;
+    font-weight:800;
+    line-height:1;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
 nav ul{
     display:flex;
     flex-direction:column;
@@ -345,6 +371,15 @@ footer{
         height:58px;
     }
 
+    .brand-logo-wrap::after{
+        right:-3px;
+        bottom:-3px;
+        width:11px;
+        height:11px;
+        font-size:0.4rem;
+        border-width:1.5px;
+    }
+
     .hero{
         min-height:calc(100svh - 130px);
         padding:44px 5% 58px;
@@ -427,6 +462,13 @@ footer{
     .brand-logo{
         width:96px;
         height:50px;
+    }
+
+    .brand-logo-wrap::after{
+        width:10px;
+        height:10px;
+        font-size:0.36rem;
+        border-width:1.3px;
     }
 
     .hero{
