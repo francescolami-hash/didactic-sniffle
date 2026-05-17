@@ -111,7 +111,7 @@ nav a:hover{
 }
 
 .hero-content{
-    max-width:880px;
+    max-width:940px;
     width:100%;
 }
 
@@ -137,11 +137,12 @@ nav a:hover{
 .hero h2{
     color:#10a37f;
     margin-bottom:24px;
-    font-size:1.35rem;
+    font-size:1.48rem;
+    line-height:1.35;
 }
 
 .hero p{
-    max-width:760px;
+    max-width:780px;
     margin:0 auto 38px;
     color:#565869;
     font-size:1.08rem;
@@ -215,6 +216,26 @@ section{
 .about-card ul{
     padding-left:20px;
     color:#565869;
+}
+
+.exploring-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:16px;
+}
+
+.exploring-item{
+    min-height:112px;
+    display:flex;
+    align-items:flex-end;
+    padding:24px;
+    border-radius:8px;
+    border:1px solid #e5e5e5;
+    background:#ffffff;
+    color:#202123;
+    font-size:1.04rem;
+    font-weight:700;
+    box-shadow:0 12px 30px rgba(32,33,35,0.04);
 }
 
 .timeline{
@@ -580,6 +601,7 @@ footer{
 
     .skills-grid,
     .blog-grid,
+    .exploring-grid,
     .markets-grid{
         grid-template-columns:1fr;
         gap:14px;
@@ -589,6 +611,7 @@ footer{
     .blog-card,
     .company-card,
     .contact-card,
+    .exploring-item,
     .market-box,
     .skill-card,
     .timeline-content{
@@ -660,6 +683,7 @@ footer{
     .blog-card,
     .company-card,
     .contact-card,
+    .exploring-item,
     .market-box,
     .skill-card,
     .timeline-content{
