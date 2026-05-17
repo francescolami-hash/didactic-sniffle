@@ -143,9 +143,27 @@ nav a:hover{
 
 .hero p{
     max-width:780px;
-    margin:0 auto 38px;
+    margin:0 auto 14px;
     color:#565869;
     font-size:1.08rem;
+}
+
+.professional-register-link{
+    display:inline-block;
+    margin:0 auto 34px;
+    color:#7a7c8c;
+    font-size:0.88rem;
+    line-height:1.5;
+    text-decoration:underline;
+    text-decoration-color:transparent;
+    text-underline-offset:4px;
+    transition:color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.professional-register-link:hover,
+.professional-register-link:focus-visible{
+    color:#565869;
+    text-decoration-color:currentColor;
 }
 
 .btn-primary{
@@ -565,7 +583,13 @@ footer{
 
     .hero p{
         font-size:0.98rem;
-        margin-bottom:30px;
+        margin-bottom:12px;
+    }
+
+    .professional-register-link{
+        max-width:300px;
+        margin-bottom:28px;
+        font-size:0.82rem;
     }
 
     .btn-primary{
