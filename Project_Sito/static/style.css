@@ -270,6 +270,74 @@ section{
     text-decoration:underline;
 }
 
+.article-page{
+    padding-left:330px;
+}
+
+.article-shell{
+    max-width:900px;
+    margin:0 auto;
+    padding:84px 9% 110px;
+}
+
+.article-back{
+    display:inline-flex;
+    margin-bottom:32px;
+    color:#10a37f;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.article-back:hover{
+    text-decoration:underline;
+}
+
+.article-header{
+    margin-bottom:42px;
+}
+
+.article-kicker{
+    color:#10a37f;
+    font-size:0.82rem;
+    font-weight:700;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+}
+
+.article-header h1{
+    max-width:820px;
+    margin:12px 0 16px;
+    color:#202123;
+    font-size:3rem;
+    line-height:1.12;
+}
+
+.article-subtitle{
+    max-width:740px;
+    color:#565869;
+    font-size:1.18rem;
+    line-height:1.6;
+}
+
+.article-content{
+    color:#343541;
+    font-size:1.04rem;
+    line-height:1.85;
+}
+
+.article-content p{
+    margin-bottom:22px;
+}
+
+.article-content ul{
+    margin:0 0 28px 22px;
+    color:#565869;
+}
+
+.article-content li{
+    margin-bottom:8px;
+}
+
 .skill-card{
     text-align:center;
     font-weight:700;
@@ -460,6 +528,23 @@ footer{
     footer{
         padding:30px 5%;
     }
+
+    .article-page{
+        padding-left:0;
+    }
+
+    .article-shell{
+        padding:54px 5% 72px;
+    }
+
+    .article-header h1{
+        font-size:clamp(2rem, 10vw, 2.8rem);
+    }
+
+    .article-subtitle,
+    .article-content{
+        font-size:1rem;
+    }
 }
 
 @media (max-width:420px){
@@ -495,6 +580,10 @@ footer{
 
     section{
         padding:54px 16px;
+    }
+
+    .article-shell{
+        padding:44px 16px 60px;
     }
 
     .about-card,
