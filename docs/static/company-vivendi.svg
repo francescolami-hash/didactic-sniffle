@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 132" role="img" aria-labelledby="title">
+  <title id="title">Vivendi logo</title>
+  <rect width="560" height="132" fill="#ffffff"/>
+  <text
+    x="50%"
+    y="66%"
+    text-anchor="middle"
+    fill="#870078"
+    font-family="Arial Rounded MT Bold, Arial, Helvetica, sans-serif"
+    font-size="92"
+    font-weight="700"
+    letter-spacing="-3"
+  >vivendi</text>
+</svg>
