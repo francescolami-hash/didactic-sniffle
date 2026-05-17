@@ -6,6 +6,7 @@
 
 html{
     scroll-behavior:smooth;
+    scroll-padding-top:24px;
 }
 
 body{
@@ -14,6 +15,7 @@ body{
     color:#202123;
     line-height:1.7;
     padding-left:330px;
+    overflow-x:hidden;
 }
 
 nav{
@@ -73,7 +75,7 @@ nav a:hover{
 }
 
 .hero{
-    min-height:100vh;
+    min-height:100svh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -84,6 +86,7 @@ nav a:hover{
 
 .hero-content{
     max-width:880px;
+    width:100%;
 }
 
 .profile-photo{
@@ -251,6 +254,7 @@ section{
     color:#10a37f;
     text-decoration:none;
     font-weight:700;
+    overflow-wrap:anywhere;
 }
 
 .contact-card a:hover{
@@ -285,61 +289,165 @@ footer{
     color:#6e6e80;
 }
 
-@media (max-width:760px){
+@media (max-width:900px){
+    html{
+        scroll-padding-top:148px;
+    }
+
     body{
         padding-left:0;
     }
 
     nav{
-        position:static;
+        position:sticky;
         width:100%;
         height:auto;
-        padding:18px 6%;
-        align-items:flex-start;
-        gap:14px;
+        padding:12px 5% 10px;
+        align-items:stretch;
+        gap:10px;
         flex-direction:column;
         border-right:0;
         border-bottom:1px solid #e5e5e5;
+        background:rgba(255,255,255,0.96);
     }
 
     nav ul{
         width:100%;
-        flex-direction:column;
-        gap:12px;
+        flex-direction:row;
+        gap:8px;
+        overflow-x:auto;
+        padding-bottom:2px;
+        scrollbar-width:none;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    nav ul::-webkit-scrollbar{
+        display:none;
+    }
+
+    nav li{
+        flex:0 0 auto;
+    }
+
+    nav a{
+        font-size:0.88rem;
     }
 
     .logo{
-        flex-direction:column;
-        align-items:flex-start;
+        flex-direction:row;
+        align-items:center;
+        gap:10px;
+        width:100%;
     }
 
     .brand-logo{
-        width:180px;
-        height:94px;
+        width:112px;
+        height:58px;
     }
 
     .hero{
-        min-height:auto;
-        padding:70px 6%;
+        min-height:calc(100svh - 130px);
+        padding:44px 5% 58px;
+    }
+
+    .profile-photo{
+        width:138px;
+        height:138px;
+        margin-bottom:24px;
     }
 
     .hero h1{
-        font-size:2.65rem;
+        font-size:clamp(2.15rem, 12vw, 3.05rem);
+        margin-bottom:14px;
     }
 
     .hero h2{
-        font-size:1.08rem;
+        font-size:1.02rem;
+        line-height:1.45;
+        margin-bottom:20px;
+    }
+
+    .hero p{
+        font-size:0.98rem;
+        margin-bottom:30px;
+    }
+
+    .btn-primary{
+        width:100%;
+        max-width:320px;
+        padding:13px 18px;
+        text-align:center;
     }
 
     section{
-        padding:72px 6%;
+        padding:64px 5%;
     }
 
     .section-title h2{
-        font-size:2rem;
+        font-size:clamp(1.75rem, 8vw, 2.15rem);
+        margin-bottom:28px;
     }
 
     .about-grid{
         grid-template-columns:1fr;
+        gap:22px;
+    }
+
+    .skills-grid,
+    .blog-grid,
+    .markets-grid{
+        grid-template-columns:1fr;
+        gap:14px;
+    }
+
+    .about-card,
+    .blog-card,
+    .contact-card,
+    .market-box,
+    .skill-card,
+    .timeline-content{
+        padding:22px;
+    }
+
+    footer{
+        padding:30px 5%;
+    }
+}
+
+@media (max-width:420px){
+    nav{
+        padding-left:16px;
+        padding-right:16px;
+    }
+
+    .logo span{
+        font-size:1rem;
+    }
+
+    .brand-logo{
+        width:96px;
+        height:50px;
+    }
+
+    .hero{
+        padding:34px 16px 50px;
+    }
+
+    .profile-photo{
+        width:122px;
+        height:122px;
+    }
+
+    section{
+        padding:54px 16px;
+    }
+
+    .about-card,
+    .blog-card,
+    .contact-card,
+    .market-box,
+    .skill-card,
+    .timeline-content{
+        padding:18px;
     }
 }
