@@ -35,6 +35,11 @@ load_local_env()
 
 
 def load_private_cv_context():
+    cv_context_text = os.environ.get("CV_CONTEXT_TEXT", "").strip()
+
+    if cv_context_text:
+        return cv_context_text[:MAX_CV_CONTEXT_CHARS]
+
     cv_path = os.environ.get("CV_CONTEXT_PATH", DEFAULT_CV_CONTEXT_PATH).strip()
 
     if not os.path.isabs(cv_path):

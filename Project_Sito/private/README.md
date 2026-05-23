@@ -30,3 +30,11 @@ Languages
 ```
 
 After editing the CV file, restart Flask so the chatbot can reload the context.
+
+For hosted deployments such as Render, prefer setting the CV as a private environment variable:
+
+```text
+CV_CONTEXT_TEXT=<paste the CV text here>
+```
+
+When `CV_CONTEXT_TEXT` is present, the app uses it before trying to read `private/francesco_cv.txt`.
