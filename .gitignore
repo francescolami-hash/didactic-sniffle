@@ -5,3 +5,6 @@
 __pycache__/
 *.pyc
 /requirements.txt
+Project_Sito/.env
+Project_Sito/private/*
+!Project_Sito/private/README.md
